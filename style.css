@@ -15,32 +15,41 @@ html {
 
 .box-1 { background-color: #4BFF4B;}
 .box-2 { background-color: #1EB4FF;}
-.box-3 { background-color: #AD58FF;}
-.box-4 { background-color: #2A3786;}
-.box-5 { background-color: #D6AD5F;}
-.box-6 { background-color: #D66F2B;}
-.box-7 { background-color: #D63A27;}
-.box-8 { background-color: #AED616;}
-.box-9 { background-color: #50D60A;}
-.box-10 { background-color: #00BAB1;}
+/*.box-3 { background-color: #AD58FF;}*/
+/*.box-4 { background-color: #2A3786;}*/
+/*.box-5 { background-color: #D6AD5F;}*/
+/*.box-6 { background-color: #D66F2B;}*/
+/*.box-7 { background-color: #D63A27;}*/
+/*.box-8 { background-color: #AED616;}*/
+/*.box-9 { background-color: #50D60A;}*/
+/*.box-10 { background-color: #00BAB1;}*/
 
 .container {
-	/*display: inline-flex;*/
 	display: flex;
 }
-.box {
-	flex: 1;
+
+.box-1 {
+	/*flex-basis: 325px;*/
+	/*width: 325px;*/
+	/*flex-grow: 10;*/
+	/*flex-shrink: 1;*/
+	flex: 10 1 325px;
 }
 
-.box-3 {
-	flex: 3;
+.box-2 {
+	/*!*flex-basis: 325px;*!*/
+	/*width: 325px;*/
+	/*!*flex-grow: 1;*!*/
+	/*flex-shrink: 10;*/
+	flex: 1 10 325px;
 }
 
-.box-5 {
-	flex: 5;
-}
-
-.box-7 {
-	flex: 1.5;
-}
-
+/*.box {*/
+/*	!*flex: 1;*!*/
+/*	!*flex-grow: 1;*!*/
+/*	!*flex-shrink: 1;*!*/
+/*	!*flex is a Shorthand for flex-grow and Shrink*!*/
+/*	flex-grow: 1;*/
+/*	flex-shrink: 1;*/
+/*	flex-basis: ;*/
+/*}*/
