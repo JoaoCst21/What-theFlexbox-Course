@@ -8,7 +8,7 @@ html {
 
 .box {
 	color: white;
-	font-size: 80px;
+	font-size: 20px;
 	text-align: center;
 	text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
 }
@@ -26,25 +26,11 @@ html {
 
 .container {
 	display: flex;
-}
-
-.box {
-	flex: 1;
-}
-
-.box-1 {
-	order: 6;
-}
-
-.box-3 {
-	order: 5;
-}
-
-.box-7 {
-	order: -1;
-}
-
-.box-5 {
-	order: -2;
+	/*justify-content: space-between;*/
+	justify-content: space-around;
+	/*justify-content: space-evenly;*/
+	/*justify-content: flex-start;*/
+	flex-direction: column;
+	min-height: 100vh;
 }
 
