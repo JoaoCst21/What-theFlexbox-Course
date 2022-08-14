@@ -8,7 +8,7 @@ html {
 
 .box {
 	color: white;
-	font-size: 20px;
+	font-size: 40px;
 	text-align: center;
 	text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
 }
@@ -25,19 +25,30 @@ html {
 .box-10 { background-color: #00BAB1;}
 
 .container {
+	/*display: inline-flex;*/
 	display: flex;
 	border: 10px solid mistyrose;
 	height: 100vh;
-	/*align-content: stretch;*/
-
-	/*align-content: space-around;
-	align-items: center;  this two works the same*/
-
-	/*align-content: center;*/
-	align-items: center;
-
-	flex-wrap: wrap;
+	align-items: start;
 }
 .box {
-	width: calc(100% / 3);
+	width: calc(100% / 9);
+	/*height: 40px;*/
+}
+
+.box-6 {
+	padding-bottom: 150px;
+}
+
+.box-4 {
+	padding-bottom: 200px;
+}
+
+.box-9 {
+	padding-bottom: 200px;
+	align-self: stretch;
+}
+
+.box-2 {
+	align-self: center;
 }
