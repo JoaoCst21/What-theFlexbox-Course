@@ -26,22 +26,25 @@ html {
 
 .container {
 	display: flex;
-	border: solid #ba00a3 8px;
-	/*min-height: 100vh;*/
-	height: 100vh;
-	/*flex-direction: column;*/
-	flex-wrap: wrap; // this make respect the width of the childs;
-	/*flex-direction: column;*/
 }
 
 .box {
-	/*width: calc(33.33333% - 20px ); !* if it doesnt fit it will make it fit unless flex-wrap=wrap*!*/
-	/*margin: 10px;*/
-
-	width: 33.333333%;
-	padding: 10px;
-	border: 10px white solid;
+	flex: 1;
 }
 
+.box-1 {
+	order: 6;
+}
 
+.box-3 {
+	order: 5;
+}
+
+.box-7 {
+	order: -1;
+}
+
+.box-5 {
+	order: -2;
+}
 
