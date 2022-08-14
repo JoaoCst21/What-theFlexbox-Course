@@ -1,0 +1,47 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.box {
+	color: white;
+	font-size: 80px;
+	text-align: center;
+	text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.box-1 { background-color: #4BFF4B;}
+.box-2 { background-color: #1EB4FF;}
+.box-3 { background-color: #AD58FF;}
+.box-4 { background-color: #2A3786;}
+.box-5 { background-color: #D6AD5F;}
+.box-6 { background-color: #D66F2B;}
+.box-7 { background-color: #D63A27;}
+.box-8 { background-color: #AED616;}
+.box-9 { background-color: #50D60A;}
+.box-10 { background-color: #00BAB1;}
+
+.container {
+	display: flex;
+	border: solid #ba00a3 8px;
+	/*min-height: 100vh;*/
+	height: 100vh;
+	/*flex-direction: column;*/
+	flex-wrap: wrap; // this make respect the width of the childs;
+	/*flex-direction: column;*/
+}
+
+.box {
+	/*width: calc(33.33333% - 20px ); !* if it doesnt fit it will make it fit unless flex-wrap=wrap*!*/
+	/*margin: 10px;*/
+
+	width: 33.333333%;
+	padding: 10px;
+	border: 10px white solid;
+}
+
+
+
