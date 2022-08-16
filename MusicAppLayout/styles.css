@@ -1,0 +1,182 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    height: 90%;
+}
+.nav {
+    width: 40px;
+    display: flex;
+    height: 100%;
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+.nav button {
+    flex-grow: 1;
+}
+
+.nav button {
+  border: none;
+}
+
+.song-container {
+  width: 100%;
+}
+
+.song-details {
+  height: 50%;
+  color: white;
+  background-color: gray;
+  /*flex-basis: 100%;*/
+  width: 100%;
+}
+
+.song__list {
+  display: flex;
+  /*list-style: disc;*/
+  flex-direction: column;
+  padding: 10px;
+}
+
+.song {
+  flex-basis: 40px;
+  /*height: 40px;*/
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  align-items: center;
+}
+
+.song > * {
+  flex-grow: 1;
+}
+
+.song:nth-child(even) {
+  background-color: rgba(211, 211, 211, 0.4);
+}
+
+.song-details{
+  display: flex;
+  align-items: center;
+  /*border: 2px red solid;*/
+}
+
+.song-details-container {
+  height: 200px;
+  display: flex;
+  flex-grow: 1;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img img {
+  margin: 0 30px;
+}
+
+.details {
+  /*border: #2A3786 solid 5px;*/
+  flex-grow: 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.details-buttons {
+  flex-grow: 1;
+  display: flex;
+  align-items: end;
+}
+
+.details-buttons button {
+  background-color: inherit;
+  border: none;
+  margin: 10px;
+}
+
+.details-buttons .add {
+  margin-left: 0;
+}
+
+.details-buttons i {
+  margin: 5px;
+}
+
+.details {
+  /*margin: 0 20px;*/
+  flex-grow: 1;
+}
+
+.details-playlist-name {
+  font-size: 2rem;
+}
+
+footer {
+    /*position: absolute;*/
+  background-color: cornflowerblue;
+  height: 10%;
+  display: flex;
+  color: white;
+  flex-shrink: 0;
+}
+
+footer > * {
+  flex-grow: 1;
+}
+
+.curr-song {
+  /*border: #D6AD5F 4px solid;*/
+  display: flex;
+  align-items: center;
+}
+
+.curr-song-container {
+  /*border: black solid 3px;*/
+  display: flex;
+  flex-grow: 1;
+}
+
+
+.curr-song-img {
+  margin: 0 15px;
+  width: 40px;
+  height: 50px;
+}
+
+.curr-song-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.curr-song-buttons button {
+  border: none;
+  background-color: inherit;
+}
+
+footer .bi {
+  color: white;
+}
+
+.curr-song-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
